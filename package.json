@@ -7,7 +7,7 @@
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check-act": "command -v act &> /dev/null || (echo 'act is not installed'; curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash)",
+		"check-act": "command -v act &> /dev/null || (echo 'act is not installed'; brew install act)",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
